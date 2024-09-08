@@ -1,0 +1,261 @@
+/* skill start */
+.skill-container{
+   
+
+    background-color: rgb(255, 255, 255);
+   /* border: red solid 2px; */
+   color: rgb(0, 0, 0);
+   
+
+}
+.skill-div1 p{
+    font-size:50px;
+
+
+}
+/* .skill-div1{
+    
+} */
+/* .skill-div2{
+    padding: 50px;
+    border: rgb(12, 204, 54) solid 2px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)) ;
+} */
+
+.skill-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 3%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+.skill:hover{
+  transition: 0.3s;
+transform: scale(1.1); 
+}
+.skill-icon{
+    padding: 30px;
+    padding-bottom: 2px;
+    font-size: 150px;
+    
+}
+.skill p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+/* skill end */
+
+
+
+/* project start */
+
+
+#projects {
+    text-align: center;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #6D28D9, #F472B6);
+
+  }
+  #projects h2{
+    font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 30px;
+   color: white;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    position: relative;
+    flex: 1 1 calc(25% - 20px);
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Card scale on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  .project-image img {
+    max-width: 100%;
+    height: 200px; /* Fixed image height */
+    transition: transform 0.3s ease; /* Smooth image zoom on hover */
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.1); /* Image zoom on hover */
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    justify-content: center;
+  }
+  
+  .tech-item {
+    /* background: linear-gradient(285deg, rgba(208,51,255,1) 19%, rgba(0,199,110,1) 100%); */
+    background-color: #7b08ff;
+    /* background-color: rgb(5, 218, 255); */
+    font-weight: 400;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tech stack button styling */
+    font-size: 0.9em;
+    transition: background-color 0.3s ease; /* Tech stack hover effect */
+  }
+  
+ 
+  
+  .project-info {
+    padding: 8px;
+    text-align: left;
+
+  }
+  
+  .project-info h3 {
+    font-weight:500;
+    margin: 0px 0;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Title color change on hover */
+}
+  
+  .project-card:hover .project-info h3 {
+    color: #ff2525; /* Title color on hover */
+  }
+  
+  .project-year {
+    color: #666;
+    margin-bottom: 2px;
+    transition: color 0.3s ease; /* Year color change on hover */
+  }
+  
+  .project-card:hover .project-year {
+    color: #333; /* Year color on hover */
+  }
+  
+  .description {
+    color: #666;
+   height: 50px; /*  Show only 3 lines */
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s ease, color 0.3s ease; /* Description transition */
+    margin-bottom: 0; /* Remove any margin below the description */
+    padding-bottom: 0; /* Remove any padding below the description */
+  }
+  
+  .project-card:hover .description {
+    height: auto;
+    color: #464343; /* Expand description on hover */
+  }
+  
+  .buttons {
+    margin-top: 0; /* Remove space between description and buttons */
+    display: block;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px); /* Slightly moved down */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for show-up */
+  }
+  
+  .project-card:hover .buttons {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .buttons a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 12px;
+    color: #fff;
+    background-color: #7b08ff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button hover effect */
+  }
+  .buttons .view-code{
+    background-color: orangered;   
+
+  }
+  .buttons a:hover {
+    background-color: #000000; /* Button color on hover */
+    transform: translateY(-2px); /* Button movement on hover */
+    color: #fff;
+  }
+
+
+  @media (max-width: 325px){
+    #projects h2 {
+        font-size: 2em;
+    }
+
+    .buttons a {
+        padding: 4px 6px;
+        font-size: 1vw;
+        margin:0 5px ;
+
+    }
+  }
+  @media (max-width: 768px) {
+    .project-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  }
+    
+  
+/* project end */
+
+
+
+
+
+@media all and (max-width:1000px){
+    
+/* skill start */
+    .skill-div1 p{
+        font-size: 15vw;
+    }
+    .skill-div1 h2{
+        font-size: 4vw;
+    }
+    .skill-icon{
+        padding: 10px;
+        padding-bottom: 2px;
+        font-size: 20vw;
+        
+    }
+    /* skill end */
+}

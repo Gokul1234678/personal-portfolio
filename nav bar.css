@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* nav bar style */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+   font-weight: 200;
+   /* font-style: normal; */
+   /* max-width: 1920px; */
+
+
+}
+
+nav{
+    font-size: 28px; 
+    padding: 20px;
+    /* background-color: whitesmoke; */
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+     
+   
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-left: 20px;
+    color: #7b08ff;
+
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+.logo:hover{
+    cursor: default;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 350;
+    
+    
+    text-decoration-color:whitesmoke ;
+    /* transition: text-decoration 0.5s */
+}
+
+nav a:hover{
+   
+    color: rgb(255, 19, 2);
+
+    text-decoration: underline;
+    text-underline-offset:1rem;
+}
+
+nav li{
+    display: inline-block;
+    margin:0 8px;
+}
+
+nav ul{
+    padding-right: 30px;
+}
+
+
+/* .menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;
+    
+} */
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media all and (max-width:1100px){
+
+    nav{
+        flex-direction: column;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li{
+        display: block;
+        margin: 10px 0;
+    }
+    nav li a{
+        font-size: .7em;
+        font-weight: 500;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    
+    .logo{
+        align-self: flex-start;
+        font-size: 10vw;
+        font-weight: bolder;
+        
+        
+    }
+
+    nav ul{
+    padding-right: 0px;
+        }
+
+    /* nav li:hover{
+
+        background-color: rgb(0, 0, 0);
+  
+        } */
+
+
+    .menu-line{
+        height: 3px;
+        width: 30px;
+        background-color: black;
+        margin-bottom: 8px;
+        
+        
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 9vw;
+        right: 5vw;
+       
+    }
+
+    .show-menu{
+        display: block;
+    }
+    
+}
+
+@media screen and  (max-width:500px){
+    
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

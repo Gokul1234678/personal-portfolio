@@ -1,0 +1,124 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+
+
+.aboutcontainer{
+    height: 580px;
+    /* max-width: 1500px; */
+   display: grid;
+    grid-template-columns: 0.6fr 1fr;
+   /* justify-content: center;
+    align-items: center; */
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+}
+
+
+
+.about-div1{
+
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* background-color: blue; */
+    /* max-height: 600px; */
+}
+
+.aboutcontainer img{   
+ 
+    border-radius: 20px;
+    /* width: 35vw; */
+    width:80% ;
+    height: auto;
+    max-height: 90%;
+    /* overflow-y: scroll; */
+    /* max-height: 600px; Maintain aspect ratio */
+    
+    filter: grayscale(100%);
+
+    /* box-shadow: 0 0 20px 10px rgb(6, 255, 243); */
+ 
+ }
+ 
+ .aboutcontainer img:hover{
+    transition: 1s;
+    filter: grayscale(0%);
+    box-shadow: 0 0 20px 10px rgb(255, 255, 255);
+ }
+ 
+
+
+ .about-div2{
+    border-radius: 20px;
+    padding: 50px;
+    font-size: larger;
+    text-align: justify;
+    color: aquamarine;
+    /* border: 2px white darkblue; */
+    max-height: 700px;
+    overflow-y: scroll;
+ }
+ .about-div2 pre::-webkit-scrollbar {/* this is not showing scrool bar */
+   display: none; /* Safari and Chrome */
+}
+ .about-div2 h1{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+ }
+ .about-div2 span{
+    font-weight:bolder ;
+    color: rgb(255, 238, 0);
+ }
+
+  
+
+
+
+
+
+/* mobile display */
+
+
+ @media all and (max-width:700px){
+    .aboutcontainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 850px;
+    }
+    .aboutcontainer img{   
+ 
+        border-radius: 20px;
+        width: 80%;
+        /* width: 70%; */
+        height: 60vh;
+        /* justify-content: center;
+        align-items: center; */
+        margin-top: 10%;
+    
+        /* box-shadow: 0 0 20px 10px rgb(6, 255, 243); */
+     
+     }
+     .aboutcontainer img:hover{
+        box-shadow:none;
+     }
+
+ }
+
+
+@media (min-width:1350px) {  /* it will apply when width more 1350 px it is used solve overflow problem of about me */
+   .aboutcontainer{
+      height: auto;
+   }
+}
+
